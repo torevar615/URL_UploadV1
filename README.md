@@ -57,6 +57,8 @@ A Telegram bot that downloads files from URLs with usage limits, referral system
    **For Windows users (recommended):**
    ```bash
    python main_windows.py
+or
+   **python main_windows_fixed.py**
    ```
    
    **For other platforms:**
@@ -106,7 +108,7 @@ Simply send any URL to the bot and it will download and send the file back to yo
 
 ## File Limits
 
-- Maximum file size: 50MB (Telegram Bot API limit)
+- Maximum file size: 2GB (Telegram Bot MTProto)
 - Daily limit: 5 files per user
 - Supported: All file types
 - Note: Files are sent as documents in Telegram
