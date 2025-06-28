@@ -42,9 +42,25 @@ A Telegram bot that downloads files from URLs with usage limits, referral system
    **Option 2: Set environment variables directly**
    ```bash
    # Windows
-   set BOT_TOKEN=your_bot_token_here
-   set ADMIN_IDS=your_telegram_user_id
-   set BOT_USERNAME=your_bot_username
+  # Telegram Bot Configuration - Copy to .env and fill in your details
+
+# Required: Get from @BotFather on Telegram
+BOT_TOKEN=
+
+# Required: Your Telegram user ID (get from @userinfobot)
+ADMIN_IDS=
+
+# Required: Your bot's username (without @)
+BOT_USERNAME=@metaurlupbot
+
+# Optional: Customize bot behavior
+MAX_DAILY_DOWNLOADS=5
+MAX_FILE_SIZE=2147483648
+DATABASE_PATH=bot_database.db
+DOWNLOAD_TIMEOUT=300
+REFERRAL_BONUS_DURATION_HOURS=24
+TELEGRAM_API_ID=
+TELEGRAM_API_HASH=
 
    # Linux/Mac
    export BOT_TOKEN=your_bot_token_here
